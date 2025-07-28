@@ -11,15 +11,15 @@ const Signin = () => {
             <div className="backgroundBlur" />
             <GlassPanel width="480px">
                 <img src={logo} alt="logo" className="logo" />
-                <form className="formGrid">
-                    <label htmlFor="userId">ID</label>
+                <form className="SigninformGrid">
+                    <label className="Inputlabel" htmlFor="userId">ID</label>
                     <input
                     id="userId"
                     name="userId"
                     type="text"
                     className="inputField"
                     />
-                    <label htmlFor="password">PW</label>
+                    <label className="Inputlabel" htmlFor="password">PW</label>
                     <input
                     id="password"
                     name="password"

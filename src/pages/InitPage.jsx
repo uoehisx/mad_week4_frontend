@@ -4,7 +4,7 @@ import '../styles/InitPage.css';
 import GlassPanel from '../components/GlassPanel';
 import logo from '../assets/logo.png';
 
-const InitPage=({onSigninClick})=>{
+const InitPage=({onSigninClick,onSignupClick})=>{
     return(
         <div className="initPageWrapper">
             <FloatingHearts />
@@ -12,7 +12,7 @@ const InitPage=({onSigninClick})=>{
             <GlassPanel width="480px">
                 <img src={logo}alt="logo" className="logo" />
                 <button onClick={onSigninClick}className="CommonBtn"> Sign in </button>
-                <button className="CommonBtn"> Sign up</button>
+                <button onClick={onSignupClick}className="CommonBtn"> Sign up</button>
             </GlassPanel>
         </div>
     );
